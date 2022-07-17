@@ -1,6 +1,7 @@
 # Use the httpd-parent image as base
 FROM quay.io/redhattraining/httpd-parent
 MAINTAINER Mahendra <mahi.vasa@gmail.com>
+EXPOSE 8080
 LABEL io.k8s.description="Apache Http Server Child Image" \
       io.k8s.display-name="APache Http Server 1" \
       io.openshift.expose-services="8080:http" \
